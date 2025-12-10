@@ -1,2 +1,237 @@
-# global-lung-cancer-analysis
-A comprehensive Python data science project analyzing lung cancer trends across 27 European countries and global PM2.5 air pollution patterns from 133 countries (2014-2024). Features complete data preprocessing pipeline, exploratory data analysis, statistical testing, and interactive visualizations using python libraries.
+# 🫁 Global Lung Cancer Analysis
+
+A comprehensive data science project examining the correlation between global air pollution levels and lung cancer incidence, with detailed analysis of European health outcomes.
+
+![Python](https://img.shields.io/badge/Python-3.12-blue)
+![Pandas](https://img.shields.io/badge/Pandas-2.3.3-green)
+![Status](https://img.shields.io/badge/Status-Active-success)
+
+---
+
+## 📊 Project Overview
+
+This project presents a comprehensive analysis of lung cancer patient data and global air pollution patterns, investigating potential correlations between PM2.5 pollution levels and lung cancer incidence across multiple countries and continents.
+
+### 📈 Datasets
+
+1. **Medical Dataset**
+
+   - 890,000 lung cancer patient records
+   - 27 European countries
+   - Time period: 2014-2024
+   - Includes: Demographics, risk factors, comorbidities, treatment types, survival outcomes
+
+2. **Air Pollution Dataset**
+   - 6,985 cities worldwide
+   - 133 countries across all continents
+   - Time period: 2017-2023
+   - PM2.5 pollution measurements (particulate matter ≤2.5 micrometers)
+
+---
+
+## 🎯 Objectives
+
+- ✅ Perform comprehensive data preprocessing, cleaning, and normalization
+- ✅ Conduct exploratory data analysis (EDA) to identify patterns and trends
+- ✅ Visualize key relationships between variables
+- ✅ Analyze global air pollution trends across continents
+- ✅ Investigate correlation between air pollution and lung cancer incidence
+- ✅ Examine impact of risk factors (smoking, BMI, comorbidities) on survival
+- ✅ Compare global pollution levels with European health outcomes
+- ✅ Provide data-driven insights and recommendations
+
+---
+
+## 🛠️ Technologies Used
+
+| Technology               | Purpose                                      |
+| ------------------------ | -------------------------------------------- |
+| **Python 3.12**          | Primary programming language                 |
+| **Pandas & NumPy**       | Data manipulation and numerical computations |
+| **Matplotlib & Seaborn** | Data visualization and plotting              |
+| **Scikit-learn**         | Data preprocessing and normalization         |
+| **SciPy**                | Statistical analysis and hypothesis testing  |
+| **Jupyter Notebook**     | Interactive analysis environment             |
+
+---
+
+## 📁 Project Structure
+
+```
+global-lung-cancer-analysis/
+├── datasets/                      # Raw and processed datasets
+│   ├── lung_cancer_part1.csv     # Medical data (Part 1)
+│   ├── lung_cancer_part2.csv     # Medical data (Part 2)
+│   ├── lung_cancer_part3.csv     # Medical data (Part 3)
+│   └── air_pollution.csv         # Global pollution data
+│
+├── notebooks/                     # Jupyter notebooks
+│   └── LungCancer-Analysis.ipynb # Main analysis notebook
+│
+├── scripts/                       # Python preprocessing scripts
+│   ├── data_preprocessing.py     # Medical data preprocessing
+│   └── air_pollution_preprocessing.py  # Pollution data preprocessing
+│
+├── visuals/                       # Generated visualizations
+│   └── (plots, charts, heatmaps)
+│
+├── findings/                      # Analysis reports
+│   ├── lung_cancer_report.md
+│   ├── air_pollution_report.md
+│   └── data_preprocessing_report.md
+│
+└── README.md                      # This file
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+```bash
+Python 3.12+
+pip (Python package manager)
+```
+
+### Installation
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/sanaullah-turab/global-lung-cancer-analysis.git
+   cd global-lung-cancer-analysis
+   ```
+
+2. **Install required packages**
+
+   ```bash
+   pip install pandas numpy matplotlib seaborn scikit-learn scipy jupyter
+   ```
+
+3. **Launch Jupyter Notebook**
+   ```bash
+   cd notebooks
+   jupyter notebook LungCancer-Analysis.ipynb
+   ```
+
+---
+
+## 📊 Key Analyses
+
+### 1. Data Preprocessing
+
+- Duplicate removal and missing value handling
+- MinMaxScaler normalization (0-1 range)
+- Time series interpolation for pollution data
+- Dataset splitting for memory efficiency
+
+### 2. Exploratory Data Analysis
+
+- Patient demographic distributions
+- Cancer stage and treatment type analysis
+- Smoking status and comorbidity prevalence
+- Global pollution trend analysis (2017-2023)
+
+### 3. Statistical Analysis
+
+- Correlation analysis between variables
+- Hypothesis testing (t-tests, ANOVA)
+- Survival rate analysis by risk factors
+- Pollution-cancer correlation studies
+
+### 4. Visualizations
+
+- Distribution plots and histograms
+- Box plots for comparative analysis
+- Heatmaps for correlation matrices
+- Time series trend visualizations
+- Geographic pollution mapping
+
+---
+
+## 📈 Key Findings
+
+### Medical Dataset Insights
+
+- **Survival Rate**: 22.01% overall survival rate
+- **Gender Distribution**: 50/50 split (Male/Female)
+- **Cancer Stages**: Evenly distributed across Stage I-IV
+- **Top Comorbidities**:
+  - Hypertension: 75% prevalence
+  - Asthma: 47% prevalence
+  - Cirrhosis: 22.6% prevalence
+
+### Air Pollution Insights
+
+- **Global Coverage**: 133 countries, 6,985 cities
+- **Trend**: Declining pollution levels from 2017 to 2023
+- **Geographic Variation**: Significant differences across continents
+- **Data Completeness**: 100% complete after preprocessing
+
+### Correlation Analysis
+
+- Analysis of pollution levels vs. lung cancer incidence
+- Risk factor impact on survival outcomes
+- Treatment effectiveness across cancer stages
+- Geographic health outcome variations
+
+---
+
+## 🔬 Methodology
+
+1. **Data Collection**: Aggregation of medical records and pollution measurements
+2. **Data Cleaning**: Duplicate removal, missing value imputation, normalization
+3. **Exploratory Analysis**: Statistical summaries, distribution analysis
+4. **Visualization**: Creation of insightful charts and graphs
+5. **Statistical Testing**: Hypothesis testing and correlation analysis
+6. **Interpretation**: Drawing data-driven conclusions and recommendations
+
+---
+
+## 📝 Documentation
+
+Detailed documentation available in the `findings/` directory:
+
+- [Lung Cancer Analysis Report](findings/lung_cancer_report.md)
+- [Air Pollution Analysis Report](findings/air_pollution_report.md)
+- [Data Preprocessing Report](findings/data_preprocessing_report.md)
+
+---
+
+## 👨‍💻 Author
+
+**Sanaullah Turab**  
+Enrollment: 01-136242-026  
+Class: BSAI - Section 3A  
+Date: December 2025
+
+---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](../../issues).
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🙏 Acknowledgments
+
+- Dataset sources and providers
+- Python scientific computing community
+- Open-source contributors
+
+---
+
+<div align="center">
+
+**⭐ Star this repository if you find it helpful!**
+
+Made with ❤️ using Python
+
+</div>
